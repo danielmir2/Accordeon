@@ -1,0 +1,24 @@
+body{
+    font-family: 'Baloo 2', cursive;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.accordion{
+    border: 1px solid lightgrey;
+}
+details{
+    padding: 10px;
+}
+details:not(:first-child){
+    /* Tous les détails sauf le 1er enfant */
+    border-top: 1px solid lightgrey;
+}
+summary{
+    font-size: 2rem;
+    list-style-type: "▶️";
+}
+details[open] summary{
+    list-style-type: "🔽";
+}
